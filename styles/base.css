@@ -22,3 +22,21 @@ header a:hover {
     padding: 10px;
 }
 
+.card {
+    background-color: #ffffff; /* Background color of the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow to create a card effect */
+    border-radius: 8px; /* Add rounded corners for the card */
+    padding: 20px; /* Add padding to the content inside the card */
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.card img {
+    width: 500px;
+    height: auto;
+}
+
