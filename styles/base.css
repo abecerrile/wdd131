@@ -23,11 +23,11 @@ header a:hover {
 }
 
 .card {
-    background-color: #ffffff; /* Background color of the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow to create a card effect */
-    border-radius: 8px; /* Add rounded corners for the card */
-    padding: 20px; /* Add padding to the content inside the card */
-    width: 700px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 800px;
     height: 300px;
     position: absolute;
     left: 20px;
@@ -38,5 +38,18 @@ header a:hover {
 .card img {
     width: 500px;
     height: auto;
+}
+
+.card-one {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
