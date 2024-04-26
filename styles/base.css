@@ -1,3 +1,7 @@
+* {
+font-family: Arial, sans-serif;
+}
+
 header {
 font-family: Arial, sans-serif;
 background-color: #004643;
@@ -23,11 +27,12 @@ header a:hover {
 }
 
 main {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 300px;
-    padding: 300px; 
+    margin: 400px;
+    padding: 400px; 
 }
 
 .card {
@@ -36,10 +41,10 @@ main {
     border-radius: 8px;
     padding: 50px;
     width: 800px;
-    height: 500px;
+    height: auto;
     position: absolute;
     left: 20px;
-    top: 65%;
+    top: 100%;
     transform: translateY(-50%);
 
 }
@@ -48,6 +53,8 @@ main {
     height: auto;
     border-radius: 10px;
     padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
