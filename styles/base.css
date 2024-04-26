@@ -7,15 +7,17 @@ padding: 10px;
 }
 
 header a {
+    font-weight: 700;
     color:aliceblue;
     text-decoration: none;
     transition: background-color 0.4s ease, color 0.4s ease;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
+
 header a:hover {
-    color: aliceblue;   
-    background-color: #0C1618;
+    color: #004643;   
+    background-color: #ffff;
     border-radius: 10px;
     padding: 10px;
 }
