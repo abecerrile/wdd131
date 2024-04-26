@@ -53,3 +53,32 @@ header a:hover {
     transform: translateY(-50%);
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sociallinks {
+    margin-top: 10px;
+  }
+  
+  .sociallinks a {
+    margin-left: 10px;
+  }
+  
+  .sociallinks img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sociallinks nav a {
+    margin-left: 10px;
+  }
+  
+  .sociallinks img:hover {
+    transform: scale(1.2);
+  }
+
