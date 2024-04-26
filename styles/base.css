@@ -46,8 +46,9 @@ main {
 .card img {
     width: 500px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 50px;
+    text-align: left;
 }
 
 .card-one {
