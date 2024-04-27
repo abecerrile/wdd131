@@ -43,7 +43,7 @@
     background-image: url('../images/canyon.jpg');
     background-size: cover;
     background-position: center;
-    max-width: 1200px; /* Limit maximum width for better readability */
+    max-width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
