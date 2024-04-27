@@ -31,12 +31,16 @@ main {
     justify-content: space-around;
     align-items: flex-start;
     padding: 20px;
+    background-color: #FFFFF7;
+    background-image: url('../images/canyon.jpg');
+    background-size: cover;
+    background-position: center;
   }
   
   .card,
   .card-zero,
   .card-one {
-    background-color: #fff;
+    background-color: #ffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
