@@ -20,8 +20,8 @@ header a {
 }
 
 header a:hover {
-    color: #004643;   
-    background-color: #ffff;
+    color: #FFFFF7;   
+    background-color: #004643;
     border-radius: 10px;
     padding: 10px;
 }
