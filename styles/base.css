@@ -13,13 +13,18 @@ padding: 0px;
 }
 
 header a {
-    font-weight: 550;
+    font-weight: 500;
     color:#004643;
     text-decoration: none;
     transition: background-color 0.4s ease, color 0.4s ease;
     margin-right: 20px;
     margin-left: 20px;
 }
+
+header nav {
+    display: flex;
+    justify-content: center;
+  }
 
 header a:hover {
     color: #FFFFF7;   
@@ -37,6 +42,12 @@ main {
     background-image: url('../images/canyon.jpg');
     background-size: cover;
     background-position: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
   }
   
   .card,
