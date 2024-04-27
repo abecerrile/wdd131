@@ -1,8 +1,17 @@
 * {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
     font-style: normal;
+    font-size: large;
+}
+
+h1, h2, h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-style:normal;
+    font-size: xx-large;
   }
+
   header {
     font-family: Arial, sans-serif;
     background-color: #FFFFF7;
@@ -31,7 +40,6 @@
     padding: 10px;
   }
   
-  /* Main content styles */
   main {
     padding: 20px;
     background-color: #FFFFF7;
@@ -44,8 +52,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
-  
-  /* Card styles */
+
   .card,
   .card-zero,
   .card-one {
@@ -64,16 +71,14 @@
     margin: 20px 0; /* Combine margin shorthand */
     opacity: 1;
   }
-  
-  /* Footer styles */
+
   footer {
     background-color: #FFFFF7;
     color: #333;
     padding: 20px;
     text-align: center;
   }
-  
-  /* Social links styles */
+
   .sociallinks {
     margin-top: 10px;
   }
