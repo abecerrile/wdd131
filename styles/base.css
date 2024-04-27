@@ -65,11 +65,12 @@ h1, h2, h3 {
   
   .card img,
   .card-zero img {
-    width: 100%;
+    width: 400px;
     height: auto;
     border-radius: 8px;
-    margin: 20px 0; /* Combine margin shorthand */
+    margin: 20px auto;
     opacity: 1;
+    display: block;
   }
 
   footer {
