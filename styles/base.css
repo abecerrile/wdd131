@@ -1,59 +1,56 @@
+/* styles/base.css */
+
+/* Global styles */
 * {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
-
-header {
-font-family: Arial, sans-serif;
-background-color: #FFFFF7;
-color: #333;
-text-align: center;
-padding: 0px;
-}
-
-header a {
+  }
+  
+  /* Header styles */
+  header {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFF7;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header a {
     font-weight: 500;
-    color:#333;
+    color: #333;
     text-decoration: none;
     transition: background-color 0.4s ease, color 0.4s ease;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-header nav {
+    margin: 5px 20px; /* Combine margin shorthand */
+  }
+  
+  header nav {
     display: flex;
     justify-content: center;
   }
-
-header a:hover {
+  
+  header a:hover {
     color: #FFFFF7;   
     background-color: #004643;
     border-radius: 10px;
     padding: 10px;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+  }
+  
+  /* Main content styles */
+  main {
     padding: 20px;
     background-color: #FFFFF7;
     background-image: url('../images/canyon.jpg');
     background-size: cover;
     background-position: center;
-    max-width: 100%;
-    width: auto;
+    max-width: 1200px; /* Limit maximum width for better readability */
     margin: 0 auto;
-    padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
   
+  /* Card styles */
   .card,
   .card-zero,
   .card-one {
@@ -61,10 +58,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
-    width: 400px;
-    margin-bottom: 20px;
     opacity: 0.8;
-    
   }
   
   .card img,
@@ -72,18 +66,19 @@ main {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0; /* Combine margin shorthand */
     opacity: 1;
   }
-
-footer {
+  
+  /* Footer styles */
+  footer {
     background-color: #FFFFF7;
     color: #333;
     padding: 20px;
     text-align: center;
   }
   
+  /* Social links styles */
   .sociallinks {
     margin-top: 10px;
   }
@@ -98,11 +93,7 @@ footer {
     transition: transform 0.3s ease;
   }
   
-  .sociallinks nav a {
-    margin-left: 10px;
-  }
-  
   .sociallinks img:hover {
     transform: scale(1.2);
   }
-
+  
