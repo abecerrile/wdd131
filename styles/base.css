@@ -9,7 +9,7 @@ font-family: Arial, sans-serif;
 background-color: #FFFFF7;
 color: #004643;
 text-align: center;
-padding: 2px;
+padding: 0px;
 }
 
 header a {
@@ -62,8 +62,8 @@ main {
   }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #FFFFF7;
+    color: #333;
     padding: 20px;
     text-align: center;
   }
