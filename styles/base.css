@@ -56,7 +56,7 @@ main {
   
   .card,
   .card-zero,
-  .card-one .box {
+  .card-one {
     background-color: #ffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -64,8 +64,6 @@ main {
     width: 400px;
     margin-bottom: 20px;
     opacity: 0.8;
-    flex: 1 1 150px;
-    margin: 5px;
     
   }
   
