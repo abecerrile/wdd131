@@ -1,19 +1,14 @@
-/* styles/base.css */
-
-/* Global styles */
 * {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
-  
-  /* Header styles */
   header {
     font-family: Arial, sans-serif;
     background-color: #FFFFF7;
     color: #333;
     text-align: center;
-    padding: 20px;
+    padding: none;
   }
   
   header a {
@@ -21,7 +16,7 @@
     color: #333;
     text-decoration: none;
     transition: background-color 0.4s ease, color 0.4s ease;
-    margin: 5px 20px; /* Combine margin shorthand */
+    margin: 5px 20px; 
   }
   
   header nav {
