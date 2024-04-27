@@ -7,18 +7,20 @@
 header {
 font-family: Arial, sans-serif;
 background-color: #FFFFF7;
-color: #004643;
+color: #333;
 text-align: center;
 padding: 0px;
 }
 
 header a {
     font-weight: 500;
-    color:#004643;
+    color:#333;
     text-decoration: none;
     transition: background-color 0.4s ease, color 0.4s ease;
     margin-right: 20px;
     margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 header nav {
