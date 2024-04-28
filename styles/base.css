@@ -79,9 +79,9 @@ h1, h2, h3 {
   footer {
     background-color: #004643;
     color: #FFFFF7;
-    padding: 40px;
-    margin: 40px;
+    width:100%;
     text-align: center;
+    padding: 10px;
   }
 
   .sociallinks {
