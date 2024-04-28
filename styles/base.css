@@ -5,7 +5,6 @@
     font-weight: -500;
     font-style: normal;
     font-size: large;
-
 }
 
 h1, h2, h3 {
@@ -18,14 +17,18 @@ h1, h2, h3 {
   header {
     font-family: "Montserrat", sans-serif;
     background-color: #FFFFF7;
-    color: #333;
+    background-image: url('../images/canyon.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFF7;
     text-align: center;
-    padding: none;
+    padding: 20px;
+  
   }
   
   header a {
     font-weight: 500;
-    color: #333;
+    color: #FFFFF7;
     text-decoration: none;
     transition: background-color 0.4s ease, color 0.4s ease;
     margin: 5px 20px; 
@@ -46,9 +49,6 @@ h1, h2, h3 {
   main {
     padding: 20px;
     background-color: #FFFFF7;
-    background-image: url('../images/canyon.jpg');
-    background-size: cover;
-    background-position: center;
     max-width: 100%;
     margin: 0 auto;
     display: grid;
@@ -63,7 +63,7 @@ h1, h2, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
-    opacity: 0.8;
+    opacity: 1;
   }
   
   .card img,
@@ -77,8 +77,8 @@ h1, h2, h3 {
   }
 
   footer {
-    background-color: #FFFFF7;
-    color: #333;
+    background-color: #004643;
+    color: #FFFFF7;
     padding: 20px;
     text-align: center;
   }
