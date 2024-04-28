@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    font-family: "Anton", sans-serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-weight: -500;
     font-style: normal;
     font-size: large;
+
 }
 
 h1, h2, h3 {
-    font-family: "Anton", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-style:normal;
     font-size: xx-large;
   }
 
   header {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #FFFFF7;
     color: #333;
     text-align: center;
