@@ -1,7 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var currentYear = new Date().getFullYear();
-    document.querySelector('footer p').textContent = "\u00A9 " + currentYear + " Alberto Becerril | Mexico City";
-  
-    var lastModifiedDate = document.lastModified;
-    document.querySelector('footer p:nth-child(2)').textContent = "Last modified: " + lastModifiedDate;
-});
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Get the last modified date of the document
+const lastModifiedDate = document.lastModified;
+
+// Update the footer's first paragraph with the current year
+document.querySelector('footer p').innerHTML = `&copy; ${currentYear} | Alberto Becerril | Mexico City`;
+
+// Update the footer's second paragraph with the last modified date
+document.querySelector('footer p:nth-of-type(2)').innerHTML = `Last modified: ${lastModifiedDate}`;
