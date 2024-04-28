@@ -23,8 +23,7 @@ h1, h2, h3 {
     color: #FFFFF7;
     text-align: center;
     padding: 20px;
-    margin: 40px;
-  
+    width: 100%;
   }
   
   header a {
