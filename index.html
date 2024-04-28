@@ -10,7 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <script src="scripts/getdates.js" defer></script>
+  <script>// Get the current year
+    const currentYear = new Date().getFullYear();
+    
+    // Get the last modified date of the document
+    const lastModifiedDate = document.lastModified;
+    
+    // Update the footer's first paragraph with the current year
+    document.querySelector('footer p').innerHTML = `&copy; ${currentYear} | Alberto Becerril | Mexico City`;
+    
+    // Update the footer's second paragraph with the last modified date
+    document.querySelector('footer p:nth-of-type(2)').innerHTML = `Last modified: ${lastModifiedDate}`;
+  </script>
 </head>
 <body>
 <div class="grid-container">
