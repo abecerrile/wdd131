@@ -45,7 +45,7 @@ nav a:hover {
 main {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
+    gap: 100px;
     padding: 200px; 
     margin: 200px; 
 }
@@ -56,11 +56,10 @@ figure {
 }
 
 img {
-    max-width: 100%;
-    height: auto; 
+    width: 300px;
+    height: auto;
     border-radius: 5px;
 }
-
 
 h2 {
     text-align: center;
