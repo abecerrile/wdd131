@@ -46,8 +46,11 @@ main {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
-    padding: 200px; 
-    margin: 200px; 
+    padding-left: 200px; 
+    margin-left: 200px; 
+    padding-right: 200px;
+    margin-right: 200px;
+    padding-top: 50px;
 }
 
 figure {
@@ -81,16 +84,20 @@ footer {
 
   .sociallinks {
     margin-top: 10px;
+    margin-right: 650px;
   }
   
   .sociallinks a {
     margin-left: 10px;
+    
   }
   
   .sociallinks img {
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease;
+    margin-right: 30px;
+    margin-top: 20px;
   }
   
   .sociallinks img:hover {
