@@ -39,23 +39,25 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffcc00; /* Change color on hover */
+    color: #ffcc00;
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
-    gap: 20px; /* Add gap between grid items */
-    padding: 20px; /* Add padding */
-}
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 80px;
+    margin:80px;
 
-/* Adjust figure styles if needed */
+}
+ 
 figure {
-    margin: 0; /* Reset margin */
+    margin: 0;
+    border-radius: 5px;
 }
 
-main h2 {
-    margin-bottom: 1rem;
+h2 {
+    text-align: center;
 }
 
 figure {
