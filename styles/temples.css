@@ -66,3 +66,29 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+footer {
+    background-color: #004643;
+    color: #FFFFF7;
+    width:100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sociallinks {
+    margin-top: 10px;
+  }
+  
+  .sociallinks a {
+    margin-left: 10px;
+  }
+  
+  .sociallinks img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sociallinks img:hover {
+    transform: scale(1.2);
+  }
