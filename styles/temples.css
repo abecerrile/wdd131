@@ -1,22 +1,19 @@
-/* temples.css */
 
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Example Google Font */
-    background-color: #f2f2f2; /* Example background color */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
 }
 
-/* Header styles */
+
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #EEF0F2;
+    color: #ffcc00;
     padding: 1rem;
     text-align: center;
 }
@@ -36,9 +33,9 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
