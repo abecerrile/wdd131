@@ -42,11 +42,16 @@ nav a:hover {
     color: #ffcc00; /* Change color on hover */
 }
 
-/* Main styles */
 main {
-    max-width: 900px; /* Example limited width */
-    margin: 0 auto; /* Center horizontally */
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
+    gap: 20px; /* Add gap between grid items */
+    padding: 20px; /* Add padding */
+}
+
+/* Adjust figure styles if needed */
+figure {
+    margin: 0; /* Reset margin */
 }
 
 main h2 {
