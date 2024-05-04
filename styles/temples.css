@@ -44,17 +44,23 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
-    padding: 80px;
-    margin:80px;
-
+    padding: 20px; 
+    margin: 0 auto; 
 }
- 
+
 figure {
     margin: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
     border-radius: 5px;
 }
+
 
 h2 {
     text-align: center;
@@ -64,15 +70,6 @@ h2 {
     padding-bottom: 0px;
 }
 
-figure {
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 footer {
     background-color: #16324F;
