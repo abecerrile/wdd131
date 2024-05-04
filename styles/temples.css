@@ -56,6 +56,11 @@ nav a:hover {
     color: #ffcc00;
 }
 
+nav.active {
+    display: block;
+}
+
+
 main {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
