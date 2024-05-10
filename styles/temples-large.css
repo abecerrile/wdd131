@@ -29,4 +29,13 @@ main {
         display: block;
     }
 }
+@media screen and (min-width: 769px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; /* Add gap between items */
+        justify-items: center;
+        align-items: center;
+    }
+}
 
