@@ -8,8 +8,7 @@
 body {
     background-color: #f2f2f2;
     font-family: "DM Serif Display", serif;
-    font-style: normal;
-    font-weight: 10;
+    font-weight: normal;
     margin: 8px;
 }
 
@@ -18,9 +17,6 @@ header {
     color: #ffcc00;
     padding: 1rem;
     text-align: center;
-    font-family: "DM Serif Display", serif;
-    font-weight: 100;
-    font-style: normal;
 }
 
 header h1 {
@@ -47,7 +43,7 @@ nav li {
 }
 
 nav a {
-    color: #FFFF;
+    color: #ffff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -56,20 +52,12 @@ nav a:hover {
     color: #ffcc00;
 }
 
-nav.active {
-    display: block;
-}
-
-
 main {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
-    padding-left: 200px; 
-    margin-left: 200px; 
-    padding-right: 200px;
-    margin-right: 200px;
-    padding-top: 50px;
+    padding: 50px 200px;
+    margin: 0 auto;
 }
 
 figure {
@@ -83,42 +71,30 @@ img {
     border-radius: 5px;
 }
 
-
-h2 {
-    text-align: center;
-    padding-top: 20px;
-}
-
-
 footer {
     background-color: #16324F;
-    color: #FFFFF7;
-    width:100%;
+    color: #fffff7;
     text-align: center;
     padding: 5px;
-    font-family: "DM Serif Display", serif;
-    font-style: normal;
-    font-weight: 10;
-  }
+}
 
-  .sociallinks {
+.sociallinks {
     margin-top: 10px;
     margin-right: 650px;
-  }
-  
-  .sociallinks a {
+}
+
+.sociallinks a {
     margin-left: 10px;
-    
-  }
-  
-  .sociallinks img {
+}
+
+.sociallinks img {
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease;
     margin-right: 30px;
     margin-top: 20px;
-  }
-  
-  .sociallinks img:hover {
+}
+
+.sociallinks img:hover {
     transform: scale(1.2);
-  }
+}
