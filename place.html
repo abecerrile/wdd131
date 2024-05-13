@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Name</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <img srcset="hero-image-small.webp 320w, hero-image-medium.webp 768w, hero-image-large.webp 1024w" alt="Hero Image">
+  </header>
+  <main>
+    <section class="content">
+      <h1>Place Name</h1>
+      <p>Description of the place</p>
+    </section>
+    <section class="weather">
+      <h2>Weather</h2>
+      <img src="weather-icon.svg" alt="Weather Icon" class="mobile-icon">
+      <span class="weather-icon" aria-label="Weather Icon">⛅</span>
+      <p>Temperature: <span id="temperature">20</span>&#176;C</p>
+      <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+      <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 - Last modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
