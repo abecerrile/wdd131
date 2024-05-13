@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    margin: 0;
+    color: #fffff7;
+}
+
+header {
+    height: 150px;
+    margin: 8px;
+    font-size: xx-large;
+    text-align: center;
+    color: #16324F;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-image: url("../images/aguascalientes.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 800px;
+}
+
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Data Section */
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.data-label {
+    font-weight: bold;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.data-value {
+    width: 50%;
+}
+
+/* Large Image Section */
+.large-image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Weather Section */
+.weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.weather img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #16324F;
+    color: #fffff7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Social links styles */
+.sociallinks {
+    margin-top: 20px;
+}
+
+.sociallinks a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.sociallinks img:hover {
+    transform: scale(1.2);
+}
