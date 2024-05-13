@@ -1,70 +1,59 @@
+/* Common styles */
 body {
-    background-color: #f2f2f2;
-    font-family: "DM Serif Display", serif;
-    font-weight: normal;
-    margin: 8px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #16324F;
-    color: #ffcc00;
-    padding: 1rem;
-    text-align: center;
-}
-
+/* Header styles */
 .hero {
-  height: 250px;
-  background-position: center;
-  background-size: cover;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main content styles */
+.main-content {
+  padding: 20px;
 }
 
 .content {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
   padding: 20px;
 }
 
-.weather {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-}
-
-.weather-icon {
-  width: 50px;
-  height: 50px;
-}
-
-.mobile-icon {
-  display: none;
-}
-
-@media (min-width: 768px) {
+/* Mobile view */
+@media only screen and (max-width: 768px) {
+  /* Header styles */
   .hero {
-    height: 400px;
+    height: 200px; /* Adjust height as needed */
   }
 
-  .weather {
-    flex-direction: row;
-    gap: 20px;
+  /* Main content styles */
+  .main-content {
+    padding: 10px;
   }
+}
 
-  .weather-icon {
-    display: none;
-  }
-
-  .weather p:nth-child(2) {
-    margin-left: auto;
-  }
-
-  .weather::after {
-    content: "⛅";
-    font-size: 50px;
+/* Computer view */
+@media only screen and (min-width: 769px) {
+  /* Header styles */
+  .hero {
+    height: 400px; /* Adjust height as needed */
   }
 }
