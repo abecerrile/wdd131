@@ -69,14 +69,30 @@
 }
 
 /* Footer Section */
-.footer {
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-  border-top: 1px solid #ddd; /* Add a border */
+footer {
+    background-color: #16324F;
+    color: #fffff7;
+    text-align: center;
+    padding: 5px;
 }
 
-.footer p {
-  font-size: 0.8em; /* Adjust font size as needed */
-  margin: 0;
+.sociallinks {
+    margin-top: 10px;
+    margin-right: 650px;
+}
+
+.sociallinks a {
+    margin-left: 10px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.sociallinks img:hover {
+    transform: scale(1.2);
 }
