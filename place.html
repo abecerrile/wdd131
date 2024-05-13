@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to our online portal dedicated to Aguascalientes, a vibrant state nestled in the heart of Mexico. Our website serves as your ultimate guide to exploring the rich culture, history, attractions, and lifestyle of Aguascalientes.">
-  <meta name="author" content="Alberto Becerril">
-  <title>Discover Aguascalientes</title>
-  <link rel="stylesheet" href="styles/place.css">
-  <script src="styles/place.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to our online portal dedicated to Aguascalientes, a vibrant state nestled in the heart of Mexico. Our website serves as your ultimate guide to exploring the rich culture, history, attractions, and lifestyle of Aguascalientes.">
+    <meta name="author" content="Alberto Becerril">
+    <title>Discover Aguascalientes</title>
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
-  <header class="hero">
-    <img srcset="hero-image-small.webp 320w, hero-image-medium.webp 768w, hero-image-large.webp 1024w" alt="Aguascalientes Cityscape">
-  </header>
-  <main>
-    <section class="content">
-      <h1>Aguascalientes</h1>
-      <p>Immerse yourself in the vibrant culture, rich history, and breathtaking attractions of Aguascalientes.</p>
-    </section>
-    <section class="weather">
-      <h2>Current Weather</h2>
-      <img src="weather-icon.svg" alt="Weather Icon" class="mobile-icon">
-      <span class="weather-icon" aria-label="Weather Icon">⛅</span>
-      <p>Temperature: <span id="temperature">20</span>&#176;C</p>
-      <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
-      <p>Wind Chill: <span id="wind-chill">N/A</span></p>
-    </section>
-  </main>
+    <header>
+        <h1>Aguascalientes</h1>
+    </header>
+
+    <main>
+        <section class="content">
+            <p>Immerse yourself in the vibrant culture, rich history, and breathtaking attractions of Aguascalientes.
+            </p>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon" class="mobile-icon">
+            <span class="weather-icon" aria-hidden="true"></span>
+            <p>Temperature: <span id="temperature">20</span>&#176;C</p>
+            <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        </section>
+    </main>
+
     <footer>
         <nav class="sociallinks">
             <p>&copy; 2024 | Alberto Becerril | Mexico City</p>
-            <a href="https://facebook.com/">
-                <img src="images/facebook.svg" alt="Facebook">    
+            <a href="https://facebook.com/" aria-label="Facebook">
+                <img src="images/facebook.png" alt="Facebook">
             </a>
-            <a href="https://instagram.com/">
-                <img src="images/instagram.svg" alt="Instagram">    
+            <a href="https://instagram.com/" aria-label="Instagram">
+                <img src="images/instagram.png" alt="Instagram">
             </a>
-            <a href="https://twitter.com/">
-                <img src="images/x.svg" alt="X">    
+            <a href="https://twitter.com/" aria-label="Twitter">
+                <img src="images/twitter.png" alt="Twitter">
             </a>
         </nav>
     </footer>
 </body>
+
 </html>
