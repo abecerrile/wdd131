@@ -68,29 +68,29 @@
   margin-bottom: 0;
 }
 
-/* Footer Section */
 footer {
-    background-color: #16324F;
-    color: #fffff7;
-    text-align: center;
-    padding: 5px;
+  background-color: #16324F;
+  color: #fffff7;
+  text-align: center;
+  padding: 20px 0; /* Increased padding for better spacing */
 }
 
+/* Social links styles */
 .sociallinks {
-    margin-top: 10px;
-    margin-right: 650px;
+  margin-top: 20px; /* Increased margin for better spacing */
 }
 
 .sociallinks a {
-    margin-left: 10px;
+  margin: 0 10px; /* Equal margin on both sides of social links */
+  display: inline-block; /* Ensure social links are displayed in a row */
 }
 
 .sociallinks img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
+  width: 40px; /* Increased icon size for better visibility */
+  height: 40px;
+  transition: transform 0.3s ease;
 }
 
 .sociallinks img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
