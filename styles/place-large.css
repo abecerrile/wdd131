@@ -11,6 +11,10 @@ header {
     color: #16324F;
 }
 
+header h1 {
+    font-size: xx-large;
+}
+
 main {
     padding: 20px;
     text-align: center;
@@ -18,10 +22,6 @@ main {
     background-position: center;
     background-size: cover;
     min-height: 600px;
-}
-
-header h1 {
-    font-size: xx-large;
 }
 
 .content h1 {
