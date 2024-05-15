@@ -45,24 +45,6 @@ main {
     display: none;
 }
 
-.images {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    justify-items: end;
-}
-
-.images img {
-    width: 300px;
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.images img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 .data {
     display: flex;
@@ -194,5 +176,24 @@ footer {
         display: none;
         content: "⛅";
         margin-left: 10px;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    .images img {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .images img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 }
