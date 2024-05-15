@@ -45,12 +45,12 @@ main {
     display: none;
 }
 
-.images {
+.images img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     border-radius: 5px;
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 
