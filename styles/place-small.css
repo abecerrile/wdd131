@@ -2,7 +2,7 @@
     --main-color: #16324F;
     --secondary-color: #fffff7;
     --tertiary-color: #ddd;
-    --quartinary-color:#0471A6;
+    --quartinary-color: #0471A6;
 }
 
 body {
@@ -66,6 +66,10 @@ main {
     width: 150px;
 }
 
+.data h2:hover {
+    color: var(--quartinary-color);
+}
+
 .data p {
     font-size: 0.9em;
     margin-bottom: 5px;
@@ -96,6 +100,10 @@ main {
     border-top: 1px solid var(--tertiary-color);
     width: 300px;
     margin: auto;
+}
+
+.weather h2:hover {
+    color: var(--quartinary-color);
 }
 
 .weather img {
