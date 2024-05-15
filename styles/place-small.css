@@ -58,6 +58,10 @@ main {
     top: 200px;
 }
 
+.data h2 {
+    width: 150px;
+}
+
 .data p {
     font-size: 0.9em;
     margin-bottom: 5px;
