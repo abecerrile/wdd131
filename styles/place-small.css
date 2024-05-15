@@ -49,7 +49,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    justify-items: center;
+    justify-items: end;
 }
 
 .images img {
@@ -69,11 +69,11 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    top: 150px;
     border: 1px solid var(--tertiary-color);
     border-radius: 5px;
     width: 200px;
     margin: auto;
+    top: 200px;
 }
 
 .data p {
@@ -101,7 +101,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 520px;
+    top: 600px;
     padding: 20px;
     border-top: 1px solid var(--tertiary-color);
     width: 300px;
