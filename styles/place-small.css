@@ -108,6 +108,8 @@ footer {
     color: var(--main-color);
     text-align: center;
     padding: 15px 0;
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
 }
 
 .sociallinks {
