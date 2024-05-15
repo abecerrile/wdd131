@@ -68,9 +68,10 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    top: 150px;
     border: 1px solid var(--tertiary-color);
     border-radius: 5px;
-    width: 600px;
+    width: 200px;
     margin: auto;
 }
 
