@@ -6,13 +6,13 @@ body {
 }
 
 header {
-    height: 100px;
     margin: 8px;
+    text-align: center;
     color: #16324F;
 }
 
 main {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     background-image: url("../images/aguascalientes.webp");
     background-position: center;
@@ -21,55 +21,61 @@ main {
 }
 
 .content h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 .content p {
-    font-size: 1em;
-    line-height: 1.4;
-    margin-bottom: 15px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
-/* Data Section */
 .data {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: center;
+    padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    width: 200px;
+    margin: auto;
+}
+
+.data p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
 }
 
 .data-label {
     font-weight: bold;
-    width: 50%;
+    width: 100%;
     margin-bottom: 5px;
 }
 
 .data-value {
-    width: 50%;
+    width: 100%;
 }
 
-/* Large Image Section */
 .large-image {
     width: 100%;
     margin-top: 15px;
 }
 
-/* Weather Section */
 .weather {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     border-top: 1px solid #ddd;
+    width: 300px;
+    margin: auto;
 }
 
 .weather img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 .weather p {
@@ -84,7 +90,6 @@ footer {
     padding: 15px 0;
 }
 
-/* Social links styles */
 .sociallinks {
     margin-top: 15px;
 }
@@ -96,10 +101,69 @@ footer {
 
 .sociallinks img {
     width: 30px;
+    /* Reduced image size */
     height: 30px;
+    /* Reduced image size */
     transition: transform 0.3s ease;
 }
 
 .sociallinks img:hover {
     transform: scale(1.2);
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 80px;
+        font-size: 1.2em;
+    }
+
+    main {
+        min-height: 400px;
+    }
+
+    .content h1 {
+        font-size: 1.2em;
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+
+    .data,
+    .weather {
+        width: 80%;
+        /* Adjusted width for smaller screens */
+        position: static;
+        /* Remove absolute positioning for smaller screens */
+        margin: 20px auto;
+        /* Center horizontally */
+    }
+
+    .data h2,
+    .weather h2 {
+        position: static;
+        width: auto;
+        margin: 0 0 10px;
+    }
+
+    .data-value,
+    .data-label {
+        width: 100%;
+    }
+
+    .weather-icon {
+        width: 200px;
+        height: 200px;
+        background-image: url('../images/weather-icon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .weather h2::after {
+        display: none;
+        content: "⛅";
+        margin-left: 10px;
+    }
 }
