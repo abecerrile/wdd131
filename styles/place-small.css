@@ -45,6 +45,15 @@ main {
     display: none;
 }
 
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    border-radius: 5px;
+    width: 200px;
+    height: auto;
+}
+
 .data {
     display: flex;
     flex-wrap: wrap;

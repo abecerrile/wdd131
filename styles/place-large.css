@@ -42,8 +42,13 @@ main {
     margin-bottom: 20px;
 }
 
-.content img {
-    display: none;
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    border-radius: 5px;
+    width: 200px;
+    height: auto;
 }
 
 .data {
