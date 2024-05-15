@@ -2,6 +2,7 @@
     --main-color: #16324F;
     --secondary-color: #fffff7;
     --tertiary-color: #ddd;
+    --quartinary-color:#0471A6;
 }
 
 body {
@@ -22,7 +23,7 @@ header h1 {
 }
 
 header h1:hover {
-    color: #0471A6;
+    color: var(--quartinary-color);
 }
 
 main {
