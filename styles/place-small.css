@@ -67,7 +67,7 @@ main {
 }
 
 .data h2:hover {
-    color: var(--quartinary-color);
+    color: var(--tertiary-color);
 }
 
 .data p {
@@ -103,7 +103,7 @@ main {
 }
 
 .weather h2:hover {
-    color: var(--quartinary-color);
+    color: var(--tertiary-color);
 }
 
 .weather img {
