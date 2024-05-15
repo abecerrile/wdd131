@@ -41,6 +41,10 @@ main {
     margin-bottom: 20px;
 }
 
+.content img {
+    display: none;
+}
+
 .data {
     display: flex;
     flex-wrap: wrap;
