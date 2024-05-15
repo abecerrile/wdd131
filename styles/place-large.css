@@ -1,18 +1,21 @@
+:root {
+    --main-color: #16324F;
+    --secondary-color: #fffff7;
+    --tertiary-color: #ddd;
+    --quartenary-color: #A9BCD0;
+}
+
 body {
     font-family: "DM Serif Display", serif;
     font-weight: normal;
     margin: 0;
-    color: #fffff7;
+    color: var(--secondary-color);
 }
 
 header {
     margin: 8px;
     text-align: center;
-    color: #16324F;
-}
-
-header h1 {
-    font-size: xx-large;
+    color: var(--main-color);
 }
 
 main {
@@ -22,6 +25,10 @@ main {
     background-position: center;
     background-size: cover;
     min-height: 600px;
+}
+
+header h1 {
+    font-size: xxxx-large;
 }
 
 .content h1 {
@@ -46,7 +53,7 @@ main {
     width: 200px;
     height: auto;
     border-radius: 5px;
-    background-color: #A9BCD0;
+    background-color: var(--quartenary-color);
     padding: 20px;
     opacity: 0.9;
     text-align: center;
@@ -58,7 +65,7 @@ main {
     top: -40px;
     left: 0;
     width: 100%;
-    background-color: #16324F;
+    background-color: var(--main-color);
     padding: 10px 20px;
     border-radius: 5px;
     margin: 0;
@@ -88,7 +95,7 @@ main {
     right: 20px;
     width: 300px;
     border-radius: 5px;
-    background-color: #A9BCD0;
+    background-color: var(--quartenary-color);
     padding: 20px;
     opacity: 0.9;
 }
@@ -103,7 +110,7 @@ main {
     top: -40px;
     left: 0;
     width: 250px;
-    background-color: #16324F;
+    background-color: var(--main-color);
     padding: 10px 20px;
     border-radius: 5px;
     margin: 0;
@@ -121,8 +128,8 @@ main {
 }
 
 footer {
-    background-color: #16324F;
-    color: #fffff7;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 20px 0;
 }
