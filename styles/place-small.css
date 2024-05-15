@@ -48,9 +48,9 @@ main {
 .images img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     border-radius: 5px;
-    width: 100px;
+    width: 300px;
     height: auto;
 }
 

@@ -42,12 +42,12 @@ main {
     margin-bottom: 20px;
 }
 
-.images img{
+.images img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     border-radius: 5px;
-    width: 100px;
+    width: 300px;
     height: auto;
 }
 
