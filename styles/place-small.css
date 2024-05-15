@@ -70,7 +70,7 @@ main {
     padding: 20px;
     border: 1px solid var(--tertiary-color);
     border-radius: 5px;
-    width: 200px;
+    width: 600px;
     margin: auto;
 }
 
@@ -99,6 +99,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 520px;
     padding: 20px;
     border-top: 1px solid var(--tertiary-color);
     width: 300px;
