@@ -1,18 +1,20 @@
+:root {
+    --main-color: #16324F;
+    --secondary-color: #fffff7;
+    --tertiary-color: #ddd;
+}
+
 body {
     font-family: "DM Serif Display", serif;
     font-weight: normal;
     margin: 0;
-    color: #fffff7;
+    color: var(--secondary-color);
 }
 
 header {
     margin: 8px;
     text-align: center;
-    color: #16324F;
-}
-
-header h1 {
-    font-size: xx-large;
+    color: var(--main-color);
 }
 
 main {
@@ -40,7 +42,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid --tertiary-color;
     border-radius: 5px;
     width: 200px;
     margin: auto;
@@ -72,7 +74,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid --tertiary-color;
     width: 300px;
     margin: auto;
 }
@@ -88,8 +90,8 @@ main {
 }
 
 footer {
-    background-color: #16324F;
-    color: #fffff7;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
 }
@@ -105,9 +107,7 @@ footer {
 
 .sociallinks img {
     width: 30px;
-    /* Reduced image size */
     height: 30px;
-    /* Reduced image size */
     transition: transform 0.3s ease;
 }
 
@@ -115,7 +115,6 @@ footer {
     transform: scale(1.2);
 }
 
-/* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
     header {
         height: 80px;
@@ -137,11 +136,8 @@ footer {
     .data,
     .weather {
         width: 80%;
-        /* Adjusted width for smaller screens */
         position: static;
-        /* Remove absolute positioning for smaller screens */
         margin: 20px auto;
-        /* Center horizontally */
     }
 
     .data h2,
