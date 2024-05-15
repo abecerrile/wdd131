@@ -44,15 +44,17 @@ main {
 
 .images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
+    justify-items: center;
 }
 
 .images img {
-    width: 100%;
+    width: 300px;
     height: auto;
     border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    top: 500px;
 }
 
 .images img:hover {
