@@ -55,5 +55,31 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+
+    {
+        templeName: "Albuquerque New Mexico Temple",
+        location: "Albuquerque, New Mexico, United States",
+        dedicated: "2000, March, 5",
+        area: 34245,
+        imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/400x400/albuquerque-temple-lds-820684-wallpaper.jpg"
+    },
+
+    {
+        templeName: "San Diego California Temple",
+        location: "San Diego, California, United States",
+        dedicated: "1993, April, 25",
+        area: 72000,
+        imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san-diego-temple-765109-wallpaper.jpg"
+    },
+
+    {
+        templeName: "Los Amgeles California Temple",
+        location: "Los Angeles, California, United States",
+        dedicated: "1956, March, 11",   
+        area: 190614,
+        imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/los-angeles-california/400x250/los-angeles-california-temple-1079458-wallpaper.jpg"
+    },
   ];
