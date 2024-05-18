@@ -84,7 +84,7 @@ const temples = [
     },
   ];
 
-  const templeContainer = document.getElementById("temple-container");
+  const templeContainer = document.getElementById("temple-grid");
 
 temples.forEach((temple) => {
   const templeCard = document.createElement("div");
