@@ -78,8 +78,53 @@ const temples = [
         templeName: "Los Amgeles California Temple",
         location: "Los Angeles, California, United States",
         dedicated: "1956, March, 11",   
-        area: 190614,
+        area: 1906,
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/los-angeles-california/400x250/los-angeles-california-temple-1079458-wallpaper.jpg"
     },
   ];
+
+  const templeContainer = document.getElementById("temple-container");
+
+temples.forEach((temple) => {
+  const templeCard = document.createElement("div");
+  templeCard.classList.add("temple-card");
+
+  const templeImage = document.createElement("img");
+  templeImage.src = temple.imageUrl;
+  templeImage.alt = temple.templeName;
+  templeImage.loading = "lazy";
+  templeCard.appendChild(templeImage);
+
+  const templeName = document.createElement("h2");
+  templeName.textContent = temple.templeName;
+  templeCard.appendChild(templeName);
+
+  const templeLocation = document.createElement("p");
+  templeLocation.textContent = "Location: " + temple.location;
+  templeCard.appendChild(templeLocation);
+
+  const templeDedicated = document.createElement("p");
+  templeDedicated.textContent = "Dedicated: " + temple.dedicated;
+  templeCard.appendChild(templeDedicated);
+
+  const templeArea = document.createElement("p");
+  templeArea.textContent = "Area: " + temple.area + " square feet";
+  templeCard.appendChild(templeArea);
+
+  templeContainer.appendChild(templeCard);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    let currentYear = new Date().getFullYear();
+    let lastModifiedDate = document.lastModified;
+
+    document.querySelector('footer p').innerHTML = `&copy; ${currentYear} | Alberto Becerril | Mexico City <br><br> Last modified: ${lastModifiedDate}`;
+
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('nav');
+    
+    hamburgerMenu.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+});
