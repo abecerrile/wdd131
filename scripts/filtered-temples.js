@@ -84,36 +84,53 @@ const temples = [
     },
   ];
 
-  const templeContainer = document.getElementById("temple-grid");
-
-temples.forEach((temple) => {
-  const templeCard = document.createElement("div");
-  templeCard.classList.add("temple-card");
-
-  const templeImage = document.createElement("img");
-  templeImage.src = temple.imageUrl;
-  templeImage.alt = temple.templeName;
-  templeImage.loading = "lazy";
-  templeCard.appendChild(templeImage);
-
-  const templeName = document.createElement("h2");
-  templeName.textContent = temple.templeName;
-  templeCard.appendChild(templeName);
-
-  const templeLocation = document.createElement("p");
-  templeLocation.textContent = "Location: " + temple.location;
-  templeCard.appendChild(templeLocation);
-
-  const templeDedicated = document.createElement("p");
-  templeDedicated.textContent = "Dedicated: " + temple.dedicated;
-  templeCard.appendChild(templeDedicated);
-
-  const templeArea = document.createElement("p");
-  templeArea.textContent = "Area: " + temple.area + " square feet";
-  templeCard.appendChild(templeArea);
-
-  templeContainer.appendChild(templeCard);
-});
+// Function to create temple cards
+function createTempleCard(temple) {
+    const card = document.createElement('div');
+    card.classList.add('temple-card');
+  
+    const image = document.createElement('img');
+    image.src = temple.imageUrl;
+    image.alt = temple.templeName;
+    image.loading = 'lazy';
+    card.appendChild(image);
+  
+    const details = document.createElement('div');
+    details.classList.add('temple-details');
+  
+    const name = document.createElement('h3');
+    name.textContent = temple.templeName;
+    details.appendChild(name);
+  
+    const location = document.createElement('p');
+    location.textContent = 'Location: ' + temple.location;
+    details.appendChild(location);
+  
+    const dedicated = document.createElement('p');
+    dedicated.textContent = 'Dedicated: ' + temple.dedicated;
+    details.appendChild(dedicated);
+  
+    const area = document.createElement('p');
+    area.textContent = 'Area: ' + temple.area + ' sq ft';
+    details.appendChild(area);
+  
+    card.appendChild(details);
+  
+    return card;
+  }
+  
+  // Function to display temple cards
+  function displayTempleCards() {
+    const templesGrid = document.querySelector('.temples-grid');
+    temples.forEach((temple) => {
+      const templeCard = createTempleCard(temple);
+      templesGrid.appendChild(templeCard);
+    });
+  }
+  
+  // Call the function to display temple cards
+  displayTempleCards();
+  
 
 document.addEventListener('DOMContentLoaded', () => {
     let currentYear = new Date().getFullYear();
