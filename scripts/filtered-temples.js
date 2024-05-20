@@ -188,6 +188,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  displayTempleCards(temples);
+
+  const navLinks = document.querySelectorAll('nav ul li a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const criteria = e.target.id;
+      filterTemples(criteria);
+    });
+  });
+
+  let currentYear = new Date().getFullYear();
+  let lastModifiedDate = document.lastModified;
+  document.querySelector('footer p').innerHTML = `&copy; ${currentYear} | Alberto Becerril | Mexico City <br><br> Last modified: ${lastModifiedDate}`;
+
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const nav = document.querySelector('nav');
+
+  hamburgerMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+});
+
 function filterTemples(criteria) {
   let filteredTemples;
   switch (criteria) {
@@ -252,4 +276,3 @@ function createTempleCard(temple) {
 
   return card;
 }
-
