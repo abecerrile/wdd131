@@ -129,17 +129,8 @@ sociallinks img {
         display: none;
     }
 
-    nav {
-        display: block;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    nav li {
-        margin-right: 1rem;
+    header nav {
+        display: none;
     }
 
     .temple-card {
