@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    background-color: var(--secondary-color);
-    color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     padding: 10px;
     text-align: center;
 }
