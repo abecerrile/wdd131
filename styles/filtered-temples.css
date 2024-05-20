@@ -1,217 +1,64 @@
-:root {
-    --main-color: #16324F;
-    --secondary-color: #fffff7;
-    --tertiary-color: #ddd;
-    --quartinary-color: #0471A6;
-}
-
+/* Default styles for smaller screens */
 body {
-    font-family: "DM Serif Display", serif;
-    font-weight: normal;
+    font-family: 'DM Serif Display', serif;
     margin: 0;
-    color: var(--secondary-color);
+    padding: 0;
 }
 
 header {
-    margin: 8px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
     text-align: center;
-    color: var(--main-color);
 }
 
-header h1 {
-    font-size: xx-large;
+.hamburger-menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-header h1:hover {
-    color: var(--quartinary-color);
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    /* Hide the menu by default */
+}
+
+nav ul li {
+    padding: 8px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 main {
-    padding: 20px;
-    text-align: center;
-    background-image: url("../images/aguascalientes.webp");
-    background-position: center;
-    background-size: cover;
-    min-height: 600px;
+    padding: 10px;
 }
 
-.content h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.content p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.content img {
-    display: none;
-}
-
-.data {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    border: 1px solid var(--tertiary-color);
-    border-radius: 5px;
-    width: 200px;
-    margin: auto;
-    top: 200px;
-}
-
-.data h2 {
-    width: 150px;
-}
-
-.data h2:hover {
-    color: var(--tertiary-color);
-}
-
-.data p {
-    font-size: 0.9em;
-    margin-bottom: 5px;
-}
-
-.data-label {
-    font-weight: bold;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.data-value {
-    width: 100%;
-}
-
-.large-image {
-    width: 100%;
-    margin-top: 15px;
-}
-
-.weather {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 600px;
-    padding: 20px;
-    border-top: 1px solid var(--tertiary-color);
-    width: 300px;
-    margin: auto;
-}
-
-.weather h2:hover {
-    color: var(--tertiary-color);
-}
-
-.weather img {
-    width: 60px;
-    height: 60px;
-}
-
-.weather p {
-    font-size: 0.9em;
-    margin-bottom: 5px;
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: var(--main-color);
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 15px 0;
-    font-family: "DM Serif Display", serif;
-    font-weight: normal;
-}
-
-.sociallinks {
-    margin-top: 15px;
+    padding: 10px;
 }
 
 .sociallinks a {
-    margin: 0 8px;
-    display: inline-block;
+    margin: 0 10px;
 }
 
 .sociallinks img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-}
-
-.sociallinks img:hover {
-    transform: scale(1.2);
-}
-
-@media only screen and (max-width: 768px) {
-    header {
-        height: 80px;
-        font-size: 1.2em;
-    }
-
-    main {
-        min-height: 400px;
-    }
-
-    .content h1 {
-        font-size: 1.2em;
-    }
-
-    .content p {
-        font-size: 1em;
-    }
-
-    .data,
-    .weather {
-        width: 80%;
-        position: static;
-        margin: 20px auto;
-    }
-
-    .data h2,
-    .weather h2 {
-        position: static;
-        width: auto;
-        margin: 0 0 10px;
-    }
-
-    .data-value,
-    .data-label {
-        width: 100%;
-    }
-
-    .weather-icon {
-        width: 200px;
-        height: 200px;
-        background-image: url('../images/weather-icon.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .weather h2::after {
-        display: none;
-        content: "⛅";
-        margin-left: 10px;
-    }
-
-    .images {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        justify-items: center;
-    }
-
-    .images img {
-        width: 300px;
-        height: auto;
-        border-radius: 5px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .images img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+    width: 24px;
+    height: 24px;
 }
