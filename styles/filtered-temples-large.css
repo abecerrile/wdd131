@@ -31,13 +31,30 @@
     }
 
     footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
+        background-color: var(--secondary-color);
+        color: var(--main-color);
+        text-align: center;
+        padding: 20px 0;
+        font-family: "DM Serif Display", serif;
+        font-weight: normal;
+    }
+
+    .sociallinks {
+        margin-top: 20px;
     }
 
     .sociallinks a {
-        margin: 0 15px;
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .sociallinks img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease;
+    }
+
+    .sociallinks img:hover {
+        transform: scale(1.2);
     }
 }

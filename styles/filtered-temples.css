@@ -48,17 +48,29 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+.sociallinks {
+    margin-top: 20px;
 }
 
 .sociallinks a {
     margin: 0 10px;
+    display: inline-block;
 }
 
 .sociallinks img {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.sociallinks img:hover {
+    transform: scale(1.2);
 }
