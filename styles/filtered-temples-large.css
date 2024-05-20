@@ -1,41 +1,43 @@
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-nav {
-    text-align: right;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav li {
-    margin-left: 1rem;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-@media screen and (min-width: 769px) {
-    nav {
-        display: block;
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
-}
-@media screen and (min-width: 769px) {
+
+    .hamburger-menu {
+        display: none;
+        /* Hide the hamburger menu on larger screens */
+    }
+
+    nav ul {
+        display: flex;
+        /* Show the menu as a horizontal list */
+    }
+
+    nav ul li {
+        padding: 0 15px;
+    }
+
     main {
-        display: grid;
+        padding: 20px;
+    }
+
+    .temples-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        justify-items: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        padding: 20px;
+    }
+
+    .sociallinks a {
+        margin: 0 15px;
     }
 }
-

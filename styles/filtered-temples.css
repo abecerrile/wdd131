@@ -1,139 +1,64 @@
-:root {
-    --primary-color: #16324F;
-    --secondary-color: #ffcc00;
-    --tertiary-color: #f2f2f2;
-}
-
-* {
+/* Default styles for smaller screens */
+body {
+    font-family: 'DM Serif Display', serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--tertiary-color);
-    font-family: "DM Serif Display", serif;
-    font-weight: normal;
-    margin: 8px;
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 1rem;
+    background-color: #333;
+    color: white;
+    padding: 10px;
     text-align: center;
-    position: relative;
-}
-
-header h1 {
-    margin-bottom: 0.5rem;
 }
 
 .hamburger-menu {
     display: block;
     background: none;
     border: none;
-    color: #fff;
+    color: white;
     font-size: 24px;
     cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-nav {
-    display: none;
-}
-
-nav.active {
-    display: block;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0;
+    display: none;
+    /* Hide the menu by default */
 }
 
-nav li {
-    margin: 0.5rem 0;
+nav ul li {
+    padding: 8px 0;
 }
 
-nav a {
-    color: var(--tertiary-color);
+nav ul li a {
+    color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--secondary-color);
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.temple-card {
-    flex: 0 0 calc(100% - 20px);
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.temple-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.temple-details {
     padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-    border-radius: 5px;
-    margin-top: 10px;
+}
+
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 5px;
-    margin-top: 20px;
-}
-
-.sociallinks {
-    margin-top: 10px;
+    padding: 10px;
 }
 
 .sociallinks a {
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
-sociallinks img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-    margin-right: 10px;
-}
-
-.sociallinks img:hover {
-    transform: scale(1.2);
-}
-
-@media screen and (min-width: 769px) {
-    .hamburger-menu {
-        display: none;
-    }
-
-    header nav {
-        display: none;
-    }
-
-    .temple-card {
-        flex: 0 0 calc(33.33% - 20px);
-    }
+.sociallinks img {
+    width: 24px;
+    height: 24px;
 }
