@@ -163,3 +163,93 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('active');
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  displayTempleCards(temples);
+
+  const navLinks = document.querySelectorAll('nav ul li a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const criteria = e.target.id;
+      filterTemples(criteria);
+    });
+  });
+
+  let currentYear = new Date().getFullYear();
+  let lastModifiedDate = document.lastModified;
+  document.querySelector('footer p').innerHTML = `&copy; ${currentYear} | Alberto Becerril | Mexico City <br><br> Last modified: ${lastModifiedDate}`;
+
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const nav = document.querySelector('nav');
+
+  hamburgerMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+});
+
+function filterTemples(criteria) {
+  let filteredTemples;
+  switch (criteria) {
+    case 'old':
+      filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+      break;
+    case 'new':
+      filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() >= 2000);
+      break;
+    case 'large':
+      filteredTemples = temples.filter(temple => temple.area > 90000);
+      break;
+    case 'small':
+      filteredTemples = temples.filter(temple => temple.area < 10000);
+      break;
+    default:
+      filteredTemples = temples;
+      break;
+  }
+  displayTempleCards(filteredTemples);
+}
+
+function displayTempleCards(filteredTemples) {
+  const templesGrid = document.querySelector('.temples-grid');
+  templesGrid.innerHTML = '';
+  filteredTemples.forEach(temple => {
+    const templeCard = createTempleCard(temple);
+    templesGrid.appendChild(templeCard);
+  });
+}
+
+function createTempleCard(temple) {
+  const card = document.createElement('div');
+  card.classList.add('temple-card');
+
+  const image = document.createElement('img');
+  image.src = temple.imageUrl;
+  image.alt = temple.templeName;
+  image.loading = 'lazy';
+  card.appendChild(image);
+
+  const details = document.createElement('div');
+  details.classList.add('temple-details');
+
+  const name = document.createElement('h3');
+  name.textContent = temple.templeName;
+  details.appendChild(name);
+
+  const location = document.createElement('p');
+  location.textContent = 'Location: ' + temple.location;
+  details.appendChild(location);
+
+  const dedicated = document.createElement('p');
+  dedicated.textContent = 'Dedicated: ' + temple.dedicated;
+  details.appendChild(dedicated);
+
+  const area = document.createElement('p');
+  area.textContent = 'Area: ' + temple.area + ' sq ft';
+  details.appendChild(area);
+
+  card.appendChild(details);
+
+  return card;
+}
+
