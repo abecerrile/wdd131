@@ -1,43 +1,215 @@
-/* Media queries for larger screens */
-@media (min-width: 768px) {
+:root {
+    --main-color: #16324F;
+    --secondary-color: #fffff7;
+    --tertiary-color: #ddd;
+    --quartenary-color: #A9BCD0;
+}
+
+body {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+header {
+    margin: 8px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+header h1 {
+    font-size: xx-large;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-image: url("../images/aguascalientes.webp");
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: end;
+}
+
+.images img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    top: 500px;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    background-color: var(--quartenary-color);
+    padding: 20px;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 1em;
+    top: 200px;
+}
+
+.data h2 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 150px;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.data-label {
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.data-value {
+    width: 100%;
+}
+
+.large-image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 600px;
+    left: 20px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: var(--quartenary-color);
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.weather h2::after {
+    content: "⛅";
+    margin-left: 10px;
+}
+
+.weather h2 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 250px;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0;
+    opacity: 1;
+}
+
+.weather img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    text-align: center;
+    padding: 20px 0;
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+.sociallinks {
+    margin-top: 20px;
+}
+
+.sociallinks a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.sociallinks img:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 769px) {
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .hamburger-menu {
-        display: none;
-        /* Hide the hamburger menu on larger screens */
-    }
-
-    nav ul {
-        display: flex;
-        /* Show the menu as a horizontal list */
-    }
-
-    nav ul li {
-        padding: 0 15px;
+        height: 80px;
+        font-size: 1.2em;
     }
 
     main {
-        padding: 20px;
+        min-height: 400px;
     }
 
-    .temples-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    .content h1 {
+        font-size: 1.2em;
     }
 
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
+    .content p {
+        font-size: 1em;
     }
 
-    .sociallinks a {
-        margin: 0 15px;
+    .data,
+    .weather {
+        width: 80%;
+        position: static;
+        margin: 20px auto;
     }
+
+    .data h2,
+    .weather h2 {
+        position: static;
+        width: auto;
+        margin: 0 0 10px;
+    }
+
+    .data-value,
+    .data-label {
+        width: 100%;
+    }
+
 }
