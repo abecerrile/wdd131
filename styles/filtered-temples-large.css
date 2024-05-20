@@ -22,6 +22,13 @@
         padding: 20px;
     }
 
+    main h2 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        top: 100px;
+    }
+
     .temples-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
