@@ -71,7 +71,6 @@ const temples = [
   },
 ];
 
-// Function to create temple cards
 function createTempleCard(temple) {
   const card = document.createElement('div');
   card.classList.add('temple-card');
@@ -106,7 +105,6 @@ function createTempleCard(temple) {
   return card;
 }
 
-// Function to display temple cards
 function displayTempleCards(filteredTemples) {
   const templesGrid = document.querySelector('.temples-grid');
   templesGrid.innerHTML = '';
@@ -116,7 +114,6 @@ function displayTempleCards(filteredTemples) {
   });
 }
 
-// Function to filter temples
 function filterTemples(criteria) {
   let filteredTemples = [];
   switch (criteria) {
@@ -155,13 +152,14 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentYear = new Date().getFullYear();
   let lastModifiedDate = document.lastModified;
   document.querySelector('footer p').innerHTML = `&copy; ${currentYear} | Alberto Becerril | Mexico City <br><br> Last modified: ${lastModifiedDate}`;
-
-  const hamburgerMenu = document.querySelector('.hamburger-menu');
-  const nav = document.querySelector('nav');
-
-  hamburgerMenu.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
 });
 
+const hamMenu = document.querySelector('.ham-menu');
+
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
+hamMenu.addEventListener('click', () => {
+  hamMenu.classList.toggle('active');
+  offScreenMenu.classList.toggle('active');
+})
 
