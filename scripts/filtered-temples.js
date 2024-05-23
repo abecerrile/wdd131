@@ -155,11 +155,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const hamMenu = document.querySelector('.ham-menu');
-
 const offScreenMenu = document.querySelector('.off-screen-menu');
 
 hamMenu.addEventListener('click', () => {
   hamMenu.classList.toggle('active');
   offScreenMenu.classList.toggle('active');
-})
+
+  if (hamMenu.classList.contains('active')) {
+    document.addEventListener('click', closeMenuOnClickOutside);
+  } else {
+    document.removeEventListener('click', closeMenuOnClickOutside);
+  }
+});
+
+function closeMenuOnClickOutside(event) {
+  if (!offScreenMenu.contains(event.target) && !hamMenu.contains(event.target)) {
+    hamMenu.classList.remove('active');
+    offScreenMenu.classList.remove('active');
+    document.removeEventListener('click', closeMenuOnClickOutside);
+  }
+}
 

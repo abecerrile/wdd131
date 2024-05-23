@@ -164,3 +164,19 @@ footer {
 .sociallinks img:hover {
     transform: scale(1.2);
 }
+
+/* Show the ham-menu on screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+    .ham-menu {
+        display: block;
+    }
+
+    .off-screen-menu {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
