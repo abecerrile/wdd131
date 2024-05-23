@@ -69,6 +69,6 @@
     }
 
     .off-screen-menu {
-        display: flex;
+        display: contents;
     }
 }
