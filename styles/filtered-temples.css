@@ -32,47 +32,6 @@ nav {
     background-color: rgb(34, 37, 49);
 }
 
-.ham-menu {
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    position: relative;
-}
-
-.ham-menu span {
-    height: 5px;
-    width: 100%;
-    background-color: var(--secondary-color);
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
-}
-
-.ham-menu span:nth-child(1) {
-    top: 25%;
-}
-
-.ham-menu span:nth-child(3) {
-    top: 75%;
-}
-
-.ham-menu.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.ham-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.ham-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, 50%) rotate(-45deg);
-}
-
 header {
     background-color: var(--main-color);
     color: var(--secondary-color);
@@ -83,15 +42,6 @@ header {
 
 header nav ul li a:hover {
     color: var(--tertiary-color);
-}
-
-.hamburger-menu {
-    display: block;
-    background: none;
-    border: none;
-    color: var(--secondary-color);
-    font-size: 24px;
-    cursor: pointer;
 }
 
 nav ul {
@@ -145,7 +95,6 @@ header h1:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
 footer {
     background-color: var(--main-color);
     color: var(--secondary-color);
@@ -174,38 +123,44 @@ footer {
     transform: scale(1.2);
 }
 
-/* styles/filtered-temples.css */
-
-/* Hamburger menu style */
-.hamburger-menu {
-    cursor: pointer;
-    font-size: 2rem;
-    display: none;
-    /* Hidden by default */
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-}
-
-/* Show hamburger menu on smaller screens */
 @media (max-width: 768px) {
-    .hamburger-menu {
-        display: grid;
+    .ham-menu {
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
     }
 
-    nav ul {
-        display: none;
-        /* Hidden by default */
-        flex-direction: column;
-        align-items: center;
+    .ham-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: var(--secondary-color);
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
     }
 
-    nav.active ul {
-        display: flex;
-        /* Show menu when nav has active class */
+    .ham-menu span:nth-child(1) {
+        top: 25%;
     }
 
-    nav ul li {
-        margin: 1rem 0;
+    .ham-menu span:nth-child(3) {
+        top: 75%;
     }
-}
+
+    .ham-menu.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .ham-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .ham-menu.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }
