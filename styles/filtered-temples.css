@@ -35,8 +35,9 @@ header nav {
 .ham-menu {
     height: 50px;
     width: 50px;
-    margin-left: auto;
     position: relative;
+    align-items: center;
+    justify-items: center;
 }
 
 .ham-menu span {
@@ -46,7 +47,7 @@ header nav {
     border-radius: 25px;
     position: absolute;
     top: 50%;
-    left: 50%;
+
     transform: translate(-50%, -50%);
     transition: .3s ease;
 }
@@ -172,11 +173,10 @@ footer {
     }
 
     .off-screen-menu {
-        display: flex;
+        display: flexbox;
     }
 
     nav ul {
-        display: none;
+        display: contents;
     }
 }
-
