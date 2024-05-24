@@ -13,6 +13,33 @@
     padding: 80px;
 }
 
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits h2 {
+    grid-column: span 2;
+}
+
+.benefits ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    grid-column: 1 / span 1;
+}
+
+.benefits img {
+    width: 100%;
+    border-radius: 10px;
+    grid-column: 2 / span 1;
+}
+
 body {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
