@@ -196,7 +196,7 @@ footer {
     }
 
     .off-screen-menu {
-        display: flexbox;
+        display: flex;
     }
 
     nav ul {
