@@ -1,12 +1,16 @@
 :root {
     --main-color: #b3b3b3;
     --secondary-color: #d74a4a;
+    --tertiary-color: #666;
+    --quaternary-color: #333;
 }
 
-.hero {
+.hero-index {
     background-color: #f5f5f5;
     background-image: url(../images/hero-index.jpg);
     background-position: center;
+    background-size: cover;
+    padding: 80px;
 }
 
 body {
@@ -43,7 +47,7 @@ h3 {
 p {
     line-height: 1.5;
     margin-bottom: 1em;
-    color: #666;
+    color: var(--quaternary-color);
 }
 
 ul {
