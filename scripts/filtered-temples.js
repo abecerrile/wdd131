@@ -78,7 +78,7 @@ function createTempleCard(temple) {
   const image = document.createElement('img');
   image.src = temple.imageUrl;
   image.alt = temple.templeName;
-  image.loading = 'lazy';
+  image.loading = 'lazy'; // Adding lazy loading here
   card.appendChild(image);
 
   const details = document.createElement('div');
@@ -104,6 +104,7 @@ function createTempleCard(temple) {
 
   return card;
 }
+
 
 function displayTempleCards(filteredTemples) {
   const templesGrid = document.querySelector('.temples-grid');
