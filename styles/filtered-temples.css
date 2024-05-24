@@ -126,7 +126,6 @@ header h1:hover {
     justify-items: center;
     align-items: center;
     background-color: #f0f0f0;
-    /* Light gray background */
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -191,7 +190,6 @@ footer {
     transform: scale(1.2);
 }
 
-/* Show the ham-menu on screens smaller than or equal to 768px */
 @media (max-width: 768px) {
     .ham-menu {
         display: block;

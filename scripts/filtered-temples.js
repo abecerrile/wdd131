@@ -73,16 +73,16 @@ const temples = [
 
 function createTempleCard(temple) {
   const card = document.createElement('div');
-  card.classList.add('temple-card');
+  card.classList.add('.temples-grid');
 
   const image = document.createElement('img');
   image.src = temple.imageUrl;
   image.alt = temple.templeName;
-  image.loading = 'lazy'; // Adding lazy loading here
+  image.loading = 'lazy';
   card.appendChild(image);
 
   const details = document.createElement('div');
-  details.classList.add('temple-details');
+  details.classList.add('t.emples-grid');
 
   const name = document.createElement('h3');
   name.textContent = temple.templeName;
@@ -104,7 +104,6 @@ function createTempleCard(temple) {
 
   return card;
 }
-
 
 function displayTempleCards(filteredTemples) {
   const templesGrid = document.querySelector('.temples-grid');
@@ -137,7 +136,6 @@ function filterTemples(criteria) {
   displayTempleCards(filteredTemples);
 }
 
-// Call the function to display all temple cards on page load
 document.addEventListener('DOMContentLoaded', () => {
   displayTempleCards(temples);
 
