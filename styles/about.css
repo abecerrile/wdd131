@@ -1,6 +1,8 @@
 :root {
     --main-color: #b3b3b3;
     --secondary-color: #d74a4a;
+    --tertiary-color: #666;
+    --quaternary-color: #333;
 }
 
 .hero-about {
@@ -17,15 +19,17 @@
     gap: 20px;
     justify-content: center;
     text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .notes h1 {
-    transition: transform 2s ease-in-out;
+    transition: color 1s ease-in-out;
 }
 
 .notes h1:hover {
     color: var(--secondary-color);
-    transform: scale(1.05);
 }
 
 .note-founder {
@@ -41,6 +45,7 @@
     gap: 20px;
     justify-content: center;
     transition: transform 1s ease-in-out;
+    width: 400px;
 }
 
 .note-founder:hover {
@@ -60,6 +65,7 @@
     gap: 20px;
     justify-content: center;
     transition: transform 1s ease-in-out;
+    width: 350px;
 }
 
 .note-CEO:hover {
@@ -79,6 +85,7 @@
     gap: 20px;
     justify-content: center;
     transition: transform 1s ease-in-out;
+    width: 400px;
 }
 
 .note-employee:hover {
