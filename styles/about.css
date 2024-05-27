@@ -17,6 +17,18 @@
     gap: 20px;
     justify-content: center;
     text-align: center;
+
+}
+
+.notes h1 {
+    transition: transform 1s ease-in-out;
+}
+
+.notes h1:hover {
+    color: var(--secondary-color);
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+
 }
 
 .note-founder {
@@ -31,6 +43,11 @@
     grid-column: 1 / span 1;
     gap: 20px;
     justify-content: center;
+    transition: transform 1s ease-in-out;
+}
+
+.note-founder:hover {
+    transform: scale(1.05);
 }
 
 .note-CEO {
@@ -45,6 +62,11 @@
     grid-column: 2 / span 1;
     gap: 20px;
     justify-content: center;
+    transition: transform 1s ease-in-out;
+}
+
+.note-CEO:hover {
+    transform: scale(1.05);
 }
 
 .note-employee {
@@ -59,8 +81,23 @@
     grid-column: 3 / span 1;
     gap: 20px;
     justify-content: center;
+    transition: transform 1s ease-in-out;
 }
 
+.note-employee:hover {
+    transform: scale(1.05);
+}
+
+.mission {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.vision {
+    text-align: center;
+    padding: 20px;
+}
 
 body {
     font-family: "DM Serif Display", serif;
