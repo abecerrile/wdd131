@@ -103,6 +103,70 @@
     padding: 20px;
 }
 
+.team {
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.team p {
+    color: var(--main-color);
+    transition: transform 2s ease-in-out;
+}
+
+.team p:hover {
+    color: var(--secondary-color);
+    transform: scale(1.5);
+}
+
+.team-member-1 {
+    background-color: #f5f5f5;
+    background-image: url(../images/hero-ceo-about.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s ease-in-out;
+    border-radius: 10px;
+    padding: 200px;
+    margin: 100px;
+
+}
+
+.team-member-1:hover {
+    transform: scale(1.05);
+}
+
+.team-member-2 {
+    background-color: #f5f5f5;
+    background-image: url(../images/hero-founder-about.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s ease-in-out;
+    border-radius: 10px;
+    padding: 200px;
+    margin: 100px;
+}
+
+.team-member-2:hover {
+    transform: scale(1.05);
+}
+
+.team-member-3 {
+    background-color: #f5f5f5;
+    background-image: url(/images/hero-ceo-about.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s ease-in-out;
+}
+
+.team-member-3:hover {
+    transform: scale(1.05);
+}
+
+
+
 body {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
