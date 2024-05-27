@@ -7,10 +7,18 @@
 
 .hero-about {
     background-color: #f5f5f5;
-    background-image: url(../images/hero-about.jpg);
+    background-image: url(../images/hero-about-1.jpg);
     background-position: center;
     background-size: cover;
     padding: 80px;
+}
+
+.hero-about p {
+    color: var(--secondary-color);
+}
+
+.hero-about a {
+    color: var(--secondary-color);
 }
 
 .notes {
@@ -98,9 +106,17 @@
 
 }
 
+.mission h2 {
+    color: var(--secondary-color);
+}
+
 .vision {
     text-align: center;
     padding: 20px;
+}
+
+.vision h2 {
+    color: var(--secondary-color);
 }
 
 .team {
@@ -130,7 +146,7 @@
 }
 
 .team-member-1 img {
-    width: 1200px;
+    width: 1000px;
 }
 
 
@@ -145,7 +161,7 @@
 }
 
 .team-member-2 img {
-    width: 1200px;
+    width: 1000px;
 }
 
 .team-member-2:hover {
@@ -156,11 +172,13 @@
     transition: transform 1s ease-in-out;
 }
 
+.team-member-3 img {
+    width: 1000px;
+}
+
 .team-member-3:hover {
     transform: scale(1.05);
 }
-
-
 
 body {
     font-family: "DM Serif Display", serif;
